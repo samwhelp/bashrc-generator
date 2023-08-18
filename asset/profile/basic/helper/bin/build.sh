@@ -31,10 +31,44 @@ THE_INIT_DIR_PATH="${THE_BASE_DIR_PATH}/../ext"
 
 mod_bashrc_build () {
 
+	##
+	## ## new bashrc
+	##
 
-	#mod_bashrc_generator_append
+	mod_bashrc_generator_bashrc_new
 
-	return 0
+
+	##
+	## ## bashrc / head
+	##
+
+	mod_bashrc_generator_bashrc_append "skel/head.sh"
+
+
+	##
+	## ## bashrc / main
+	##
+
+	mod_bashrc_generator_bashrc_append "part/color.sh"
+
+	mod_bashrc_generator_bashrc_append "part/path.sh"
+
+	mod_bashrc_generator_bashrc_append "part/alias.sh"
+
+	mod_bashrc_generator_bashrc_append "part/prompt.sh"
+
+	#mod_bashrc_generator_bashrc_append "vendor/bash-it.sh"
+
+	#mod_bashrc_generator_bashrc_append "vendor/starship.sh"
+
+	mod_bashrc_generator_bashrc_append "part/fzf.sh"
+
+
+	##
+	## ## bashrc / tail
+	##
+
+	mod_bashrc_generator_bashrc_append "skel/tail.sh"
 
 }
 

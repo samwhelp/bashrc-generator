@@ -8,7 +8,7 @@
 ## Load: Master / Mod / Generator
 ##
 
-. "${THE_MAIN_EXT_MAIN_MOD_DIR_PATH}/signal.sh"
+. "${THE_MAIN_EXT_MASTER_MOD_DIR_PATH}/generator.sh"
 
 
 ##
