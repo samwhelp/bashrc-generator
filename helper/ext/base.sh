@@ -69,7 +69,7 @@ is_not_debug () {
 base_var_init () {
 
 	##
-	## Base Path
+	## ## Base Path
 	##
 
 	THE_INIT_DIR_PATH="$(find_dir_path "${THE_INIT_DIR_PATH}/.")"
@@ -79,7 +79,7 @@ base_var_init () {
 
 
 	##
-	## Main Path
+	## ## Main Path
 	##
 
 	THE_MAIN_DIR_NAME="helper"
@@ -87,7 +87,7 @@ base_var_init () {
 
 
 	##
-	## Main Path / Sub
+	## ## Main Path / Sub
 	##
 
 	THE_MAIN_BIN_DIR_NAME="bin"
@@ -112,7 +112,7 @@ base_var_init () {
 
 
 	##
-	## Main Path / Ext / Main
+	## ## Main Path / Ext / Main
 	##
 
 	THE_MAIN_EXT_MAIN_DIR_NAME="main"
@@ -120,7 +120,7 @@ base_var_init () {
 
 
 	##
-	## Main Path / Ext / Main / Sub
+	## ## Main Path / Ext / Main / Sub
 	##
 
 	THE_MAIN_EXT_MAIN_UTIL_DIR_NAME="util"
@@ -136,7 +136,7 @@ base_var_init () {
 
 
 	##
-	## Main Path / Ext / Master
+	## ## Main Path / Ext / Master
 	##
 
 	THE_MAIN_EXT_MASTER_DIR_NAME="master"
@@ -144,7 +144,7 @@ base_var_init () {
 
 
 	##
-	## Main Path / Ext / Master / Sub
+	## ## Main Path / Ext / Master / Sub
 	##
 
 	THE_MAIN_EXT_MASTER_UTIL_DIR_NAME="util"
@@ -160,14 +160,21 @@ base_var_init () {
 
 
 	##
-	## Master Path
+	############################################################################
+	##
+
+
+
+
+	##
+	## ## Master Path
 	##
 
 	THE_MASTER_DIR_PATH="${THE_PLAN_DIR_PATH}"
 
 
 	##
-	## Master Path / Sub
+	## ## Master Path / Sub
 	##
 
 	THE_MASTER_ASSET_DIR_NAME="asset"
@@ -176,14 +183,13 @@ base_var_init () {
 	THE_MASTER_TOOL_DIR_NAME="tool"
 	THE_MASTER_TOOL_DIR_PATH="${THE_MASTER_DIR_PATH}/${THE_MASTER_TOOL_DIR_NAME}"
 
-	##
-	## Master Path / Asset / Sub
-	##
 
+	##
+	## ## Master Path / Asset / Sub
+	##
 
 	THE_MASTER_ASSET_PORT_DIR_NAME="port"
 	THE_MASTER_ASSET_PORT_DIR_PATH="${THE_MASTER_ASSET_DIR_PATH}/${THE_MASTER_ASSET_PORT_DIR_NAME}"
-
 
 	THE_MASTER_ASSET_PROFILE_DIR_NAME="profile"
 	THE_MASTER_ASSET_PROFILE_DIR_PATH="${THE_MASTER_ASSET_DIR_PATH}/${THE_MASTER_ASSET_PROFILE_DIR_NAME}"
@@ -283,7 +289,7 @@ base_var_dump () {
 
 	util_debug_echo
 	util_debug_echo "##"
-	util_debug_echo "## Main Path / Ext / Main"
+	util_debug_echo "## ## Main Path / Ext / Main"
 	util_debug_echo "##"
 	util_debug_echo
 
@@ -294,7 +300,7 @@ base_var_dump () {
 
 	util_debug_echo
 	util_debug_echo "##"
-	util_debug_echo "## Main Path / Ext / Main / Sub"
+	util_debug_echo "## ## Main Path / Ext / Main / Sub"
 	util_debug_echo "##"
 	util_debug_echo
 
@@ -315,7 +321,7 @@ base_var_dump () {
 
 	util_debug_echo
 	util_debug_echo "##"
-	util_debug_echo "## Main Path / Ext / Master"
+	util_debug_echo "## ## Main Path / Ext / Master"
 	util_debug_echo "##"
 	util_debug_echo
 
@@ -326,7 +332,7 @@ base_var_dump () {
 
 	util_debug_echo
 	util_debug_echo "##"
-	util_debug_echo "## Main Path / Ext / Master / Sub"
+	util_debug_echo "## ## Main Path / Ext / Master / Sub"
 	util_debug_echo "##"
 	util_debug_echo
 
@@ -341,6 +347,13 @@ base_var_dump () {
 	util_debug_echo "THE_MAIN_EXT_MASTER_MOD_DIR_NAME=${THE_MAIN_EXT_MASTER_MOD_DIR_NAME}"
 	util_debug_echo "THE_MAIN_EXT_MASTER_MOD_DIR_PATH=${THE_MAIN_EXT_MASTER_MOD_DIR_PATH}"
 	util_debug_echo
+
+
+
+
+	##
+	############################################################################
+	##
 
 
 
