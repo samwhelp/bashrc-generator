@@ -1,0 +1,4 @@
+
+
+# bashrc-generator / tool
+
