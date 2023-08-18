@@ -176,6 +176,19 @@ base_var_init () {
 	THE_MASTER_TOOL_DIR_NAME="tool"
 	THE_MASTER_TOOL_DIR_PATH="${THE_MASTER_DIR_PATH}/${THE_MASTER_TOOL_DIR_NAME}"
 
+	##
+	## Master Path / Asset / Sub
+	##
+
+
+	THE_MASTER_ASSET_PART_DIR_NAME="part"
+	THE_MASTER_ASSET_PART_DIR_PATH="${THE_MASTER_ASSET_DIR_PATH}/${THE_MASTER_ASSET_PART_DIR_NAME}"
+
+
+	THE_MASTER_ASSET_VENDOR_DIR_NAME="vendor"
+	THE_MASTER_ASSET_VENDOR_DIR_PATH="${THE_MASTER_ASSET_DIR_PATH}/${THE_MASTER_ASSET_VENDOR_DIR_NAME}"
+
+
 
 	return 0
 
@@ -348,16 +361,27 @@ base_var_dump () {
 	util_debug_echo "##"
 	util_debug_echo
 
-	util_debug_echo "THE_MASTER_PART_DIR_NAME=${THE_MASTER_PART_DIR_NAME}"
-	util_debug_echo "THE_MASTER_PART_DIR_PATH=${THE_MASTER_PART_DIR_PATH}"
-	util_debug_echo
-
-	util_debug_echo "THE_MASTER_VENDOR_DIR_NAME=${THE_MASTER_VENDOR_DIR_NAME}"
-	util_debug_echo "THE_MASTER_VENDOR_DIR_PATH=${THE_MASTER_VENDOR_DIR_PATH}"
+	util_debug_echo "THE_MASTER_ASSET_DIR_NAME=${THE_MASTER_ASSET_DIR_NAME}"
+	util_debug_echo "THE_MASTER_ASSET_DIR_PATH=${THE_MASTER_ASSET_DIR_PATH}"
 	util_debug_echo
 
 	util_debug_echo "THE_MASTER_TOOL_DIR_NAME=${THE_MASTER_TOOL_DIR_NAME}"
 	util_debug_echo "THE_MASTER_TOOL_DIR_PATH=${THE_MASTER_TOOL_DIR_PATH}"
+	util_debug_echo
+
+
+	util_debug_echo
+	util_debug_echo "##"
+	util_debug_echo "## ## Master Path / Asset / Sub"
+	util_debug_echo "##"
+	util_debug_echo
+
+	util_debug_echo "THE_MASTER_ASSET_PART_DIR_NAME=${THE_MASTER_ASSET_PART_DIR_NAME}"
+	util_debug_echo "THE_MASTER_ASSET_PART_DIR_PATH=${THE_MASTER_ASSET_PART_DIR_PATH}"
+	util_debug_echo
+
+	util_debug_echo "THE_MASTER_ASSET_VENDOR_DIR_NAME=${THE_MASTER_ASSET_VENDOR_DIR_NAME}"
+	util_debug_echo "THE_MASTER_ASSET_VENDOR_DIR_PATH=${THE_MASTER_ASSET_VENDOR_DIR_PATH}"
 	util_debug_echo
 
 
