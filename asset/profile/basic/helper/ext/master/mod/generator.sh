@@ -6,7 +6,11 @@
 
 mod_bashrc_generator_bashrc_new () {
 
+	local target_dir_path="${THE_BASHRC_BUILD_TARGET_DIR_PATH}"
+
 	local target_file_path="${THE_BASHRC_BUILD_TARGET_FILE_PATH}"
+
+	mkdir -p "${target_dir_path}"
 
 	echo > "${target_file_path}"
 
